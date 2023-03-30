@@ -1,6 +1,6 @@
 # Docker Compose PHP Application
 
-This is a Docker Compose-based PHP application that allows you to quickly set up a development environment for PHP-based applications. It includes an Apache web server, a MySQL database server, and PHPMyAdmin for database administration.
+This is a Docker Compose-based PHP application that allows you to quickly set up a development environment for PHP-based applications. It includes an Apache web server, a MySQL database server a MongoDB server, PHPMyAdmin and Mongo Express for database administration.
 
 ## Requirements
 
@@ -9,29 +9,30 @@ This is a Docker Compose-based PHP application that allows you to quickly set up
 
 ## Before you run
 
-Copy the contents of .env.example and create a .env file. Paste the contents of the .env.example into it and set your own values for the DB.
+==Copy the contents of .env.example and create a .env file.== 
+==Paste the contents of the .env.example into it and set your own values for the DB.==
 
 ## Installation
 
 1. Clone this repository to your local machine:
 
-git clone https://github.com/innocious/BasicApplication.git
+`git clone https://github.com/innocious/BasicApplication.git`
 
 2. Navigate to the root directory of the cloned repository:
 
-cd BasicApplication
+`cd BasicApplication`
 
 3. Build the Docker images:
  
-  For Development (Xdebug Enabled) set the BUILD_ENV variable in the docker-compose.yml file to developement.
- 
-  Otherwise set BUILD_ENV to production to turn Xdebug off.
+> For Development (Xdebug Enabled) set the BUILD_ENV variable in the docker-compose.yml file to developement.
+> 
+> Otherwise set BUILD_ENV to production to turn Xdebug off.
 
-Run docker-compose build
+Run `docker-compose build`
 
 4. Start the Docker containers:
 
-Run docker-compose up
+Run `docker-compose up`
 
 5. Open your web browser to see the running application.
     Go to http://localhost/index.php -> For Mysql
