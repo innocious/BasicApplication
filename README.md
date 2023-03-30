@@ -35,14 +35,14 @@ Run `docker-compose build`
 Run `docker-compose up`
 
 5. Open your web browser to see the running application.
-    Go to http://localhost/index.php -> For Mysql
-    Go to http://localhost/mongodb.php -> For Mongo DB
+- Go to http://localhost/index.php -> For Mysql
+- Go to http://localhost/mongodb.php -> For Mongo DB
 
 6. To access PHPMyAdmin, go to http://localhost:8085 in your web browser.
 
 7. 6. To access MongoExpress, go to http://localhost:8081 in your web browser.
 
-7. To stop the containers, run: docker-compose down
+7. To stop the containers, run: `docker-compose down`
 
 
 ## Configuration
@@ -53,4 +53,4 @@ The Apache web server is configured to serve files from the `/var/www/html/web` 
 
 ### Database
 
-The MySQL database is configured automatically in the initdb directory
+The MySQL database is configured in the initdb directory
