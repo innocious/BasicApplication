@@ -32,7 +32,7 @@ Run `docker-compose build`
 
 4. Start the Docker containers:
 
-**Ensure you have set values for the Variables in your .env otherwise, docker compose up will not work**
+**Ensure you have set values for the Variables in your .env otherwise, your application will not work**
 
 Run `docker-compose up`
 
