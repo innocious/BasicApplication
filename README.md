@@ -49,12 +49,7 @@ The Apache web server is configured to serve files from the `public` directory. 
 
 ### Database
 
-The MySQL database is configured automatically in the initdb directory:
-
-- Host: `db`
-- Username: `root`
-- Password: `root`
-- Database: `app`
+The MySQL database is configured automatically in the initdb directory
 
 You can change these settings by modifying the `docker-compose.yml` file.
 
