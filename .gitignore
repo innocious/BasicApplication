@@ -1,3 +1,10 @@
-database/
+composer.lock
 .env
-old version/
+
+/vendor
+
+/old version
+
+/old version 2
+
+/database
