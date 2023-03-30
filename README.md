@@ -7,11 +7,6 @@ This is a Docker Compose-based PHP application that allows you to quickly set up
 - Docker Engine
 - Docker Compose
 
-## Before you run
-
-==Copy the contents of .env.example and create a .env file.== 
-==Paste the contents of the .env.example into it and set your own values for the DB.==
-
 ## Installation
 
 1. Clone this repository to your local machine:
@@ -21,6 +16,9 @@ This is a Docker Compose-based PHP application that allows you to quickly set up
 2. Navigate to the root directory of the cloned repository:
 
 `cd BasicApplication`
+**Copy the contents of .env.example and create a .env file.** 
+**Paste the contents of the .env.example into it and set your own values for the DB.**
+
 
 3. Build the Docker images:
  
@@ -40,9 +38,9 @@ Run `docker-compose up`
 
 6. To access PHPMyAdmin, go to http://localhost:8085 in your web browser.
 
-7. 6. To access MongoExpress, go to http://localhost:8081 in your web browser.
+7. To access MongoExpress, go to http://localhost:8081 in your web browser.
 
-7. To stop the containers, run: `docker-compose down`
+8. To stop the containers, run: `docker-compose down`
 
 
 ## Configuration
