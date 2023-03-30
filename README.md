@@ -9,7 +9,7 @@ This is a Docker Compose-based PHP application that allows you to quickly set up
 
 ## Before you run
 
-Copy the contents of .env.example and create a .env file. Paste the contents of the .env.example into it.
+Copy the contents of .env.example and create a .env file. Paste the contents of the .env.example into it and set your own values for the DB.
 
 ## Installation
 
@@ -23,8 +23,9 @@ cd BasicApplication
 
 3. Build the Docker images:
  
- | For Development (Xdebug Enabled) set the BUILD_ENV variable in the docker-compose.yml file to developement.
- Otherwise set BUILD_ENV to production to turn Xdebug off.
+  For Development (Xdebug Enabled) set the BUILD_ENV variable in the docker-compose.yml file to developement.
+ 
+  Otherwise set BUILD_ENV to production to turn Xdebug off.
 
 Run docker-compose build
 
@@ -32,7 +33,9 @@ Run docker-compose build
 
 Run docker-compose up
 
-5. Open your web browser and go to http://localhost/index.php to see the running application.
+5. Open your web browser to see the running application.
+    Go to http://localhost/index.php -> For Mysql
+    Go to http://localhost/mongodb.php -> For Mongo DB
 
 6. To access PHPMyAdmin, go to http://localhost:8085 in your web browser.
 
@@ -45,14 +48,8 @@ Run docker-compose up
 
 ### Web Server
 
-The Apache web server is configured to serve files from the `public` directory. Place your PHP files in this directory.
+The Apache web server is configured to serve files from the `/var/www/html/web` directory. Place your PHP files in this directory.
 
 ### Database
 
 The MySQL database is configured automatically in the initdb directory
-
-You can change these settings by modifying the `docker-compose.yml` file.
-
-### PHPMyAdmin
-
-PHPMyAdmin is configured to connect to the MySQL database at `db:3306`. You can access it by going to http://localhost:8081 in your web browser.
