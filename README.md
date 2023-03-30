@@ -16,6 +16,7 @@ This is a Docker Compose-based PHP application that allows you to quickly set up
 2. Navigate to the root directory of the cloned repository:
 
 `cd BasicApplication`
+
 **Copy the contents of .env.example and create a .env file.** 
 **Paste the contents of the .env.example into it and set your own values for the DB.**
 
