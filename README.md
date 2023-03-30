@@ -27,6 +27,8 @@ This is a Docker Compose-based PHP application that allows you to quickly set up
 > 
 > Otherwise set BUILD_ENV to production to turn Xdebug off.
 
+**Ensure you have set values for the Variables in your .env otherwise, docker compose up will not work**
+
 Run `docker-compose build`
 
 4. Start the Docker containers:
